@@ -1,0 +1,80 @@
+{
+  "audit_timestamp": "2026-10-16T23:55:00Z",
+  "selected_model_consistency": {
+    "model_name": "MobileNetV3-Small",
+    "checkpoint_file": "mobilenetv3_small_transfer.pth",
+    "test_accuracy": {
+      "recalculated_test_export": 0.6729,
+      "stored_report": 0.6729,
+      "backend_api_response": 0.6729,
+      "matches": true
+    },
+    "macro_f1": {
+      "recalculated_test_export": 0.6652,
+      "stored_report": 0.6652,
+      "backend_api_response": 0.6652,
+      "matches": true
+    },
+    "test_samples_count": {
+      "recalculated_test_export": 214,
+      "stored_report": 214,
+      "backend_api_response": 214,
+      "matches": true
+    },
+    "zero_f1_classes_count": {
+      "recalculated_test_export": 0,
+      "stored_report": 0,
+      "frontend_dynamic_badge": 0,
+      "matches": true
+    },
+    "average_latency_ms": {
+      "benchmark_ms": 11.09,
+      "backend_api_response_ms": 11.09,
+      "matches": true
+    }
+  },
+  "baseline_scratch_cnn_consistency": {
+    "model_name": "EnhancedCropCNN",
+    "checkpoint_file": "enhanced_cnn.pth",
+    "test_accuracy": {
+      "recalculated": 0.271,
+      "stored_report": 0.271,
+      "matches": true
+    },
+    "macro_f1": {
+      "recalculated": 0.2174,
+      "stored_report": 0.2174,
+      "matches": true
+    },
+    "test_samples_count": {
+      "recalculated": 214,
+      "stored_report": 214,
+      "matches": true
+    },
+    "zero_f1_classes_count": {
+      "recalculated": 3,
+      "stored_report": 3,
+      "matches": true
+    }
+  },
+  "reconciled_discrepancies": [
+    {
+      "component": "frontend/src/components/MetricsDashboard.tsx",
+      "issue": "Hardcoded text string '0 Zero-F1 Classes'",
+      "resolution": "Replaced hardcoded static label with dynamic expression zeroF1Count calculated from metrics.per_class_f1. Displays 0 for MobileNetV3-Small (verified true) and dynamically displays 3 if switched to EnhancedCropCNN.",
+      "status": "RESOLVED"
+    },
+    {
+      "component": "FarmWatch_Model_Audit_Report.md",
+      "issue": "Report table claimed 939 training images with an unverified note about 12 bounding box crops.",
+      "resolution": "Audit verified that focused_train_manifest.json contains exactly 951 unique image entries with 951 distinct SHA-256 hashes (zero duplicate image files). The 939 count was a table arithmetic typo. Corrected to exactly 951 unique training images.",
+      "status": "RESOLVED"
+    },
+    {
+      "component": "Dataset Provenance Documentation",
+      "issue": "Potential ambiguity over official PlantDoc test split vs custom split.",
+      "resolution": "Explicitly documented that the evaluation split is a custom stratified held-out partition of the combined PlantDoc benchmark (drawing 202 images from PlantDoc train and 12 from PlantDoc test), not the official PlantDoc test directory. Confirmed zero SHA-256 hash leakage across splits.",
+      "status": "RESOLVED"
+    }
+  ]
+}
