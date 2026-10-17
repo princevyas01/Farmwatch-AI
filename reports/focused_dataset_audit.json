@@ -1,0 +1,33 @@
+{
+  "num_classes": 11,
+  "classes": [
+    "Blueberry leaf",
+    "Corn leaf blight",
+    "Corn rust leaf",
+    "Peach leaf",
+    "Potato leaf early blight",
+    "Potato leaf late blight",
+    "Raspberry leaf",
+    "Squash Powdery mildew leaf",
+    "Tomato Septoria leaf spot",
+    "Tomato leaf bacterial spot",
+    "Tomato leaf late blight"
+  ],
+  "total_images": 1365,
+  "train_count": 951,
+  "val_count": 200,
+  "test_count": 214,
+  "per_class_counts": {
+    "Blueberry leaf": 114,
+    "Corn leaf blight": 189,
+    "Corn rust leaf": 116,
+    "Peach leaf": 111,
+    "Potato leaf early blight": 115,
+    "Potato leaf late blight": 101,
+    "Raspberry leaf": 119,
+    "Squash Powdery mildew leaf": 130,
+    "Tomato Septoria leaf spot": 150,
+    "Tomato leaf bacterial spot": 109,
+    "Tomato leaf late blight": 111
+  }
+}
