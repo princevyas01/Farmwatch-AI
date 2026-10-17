@@ -1,0 +1,298 @@
+{
+  "model_name": "MobileNetV3-Small",
+  "dataset": "PlantDoc (Well-Represented Classes Subset)",
+  "license": "CC BY 4.0",
+  "checkpoint_evaluated": "mobilenetv3_small_transfer.pth",
+  "is_pretrained": true,
+  "pretrained_weights": "ImageNet-1K",
+  "test_samples_count": 214,
+  "num_classes": 11,
+  "test_accuracy": 0.6729,
+  "balanced_accuracy": 0.6598,
+  "macro_precision": 0.691,
+  "macro_recall": 0.6598,
+  "macro_f1": 0.6652,
+  "weighted_f1": 0.6757,
+  "average_latency_ms": 11.09,
+  "p95_latency_ms": 16.29,
+  "class_names": [
+    "Blueberry leaf",
+    "Corn leaf blight",
+    "Corn rust leaf",
+    "Peach leaf",
+    "Potato leaf early blight",
+    "Potato leaf late blight",
+    "Raspberry leaf",
+    "Squash Powdery mildew leaf",
+    "Tomato Septoria leaf spot",
+    "Tomato leaf bacterial spot",
+    "Tomato leaf late blight"
+  ],
+  "per_class_metrics": {
+    "Blueberry leaf": {
+      "precision": 0.6,
+      "recall": 0.8333,
+      "f1_score": 0.6977,
+      "support": 18
+    },
+    "Corn leaf blight": {
+      "precision": 0.8333,
+      "recall": 0.8621,
+      "f1_score": 0.8475,
+      "support": 29
+    },
+    "Corn rust leaf": {
+      "precision": 0.7778,
+      "recall": 0.7778,
+      "f1_score": 0.7778,
+      "support": 18
+    },
+    "Peach leaf": {
+      "precision": 0.9333,
+      "recall": 0.7778,
+      "f1_score": 0.8485,
+      "support": 18
+    },
+    "Potato leaf early blight": {
+      "precision": 0.4,
+      "recall": 0.4444,
+      "f1_score": 0.4211,
+      "support": 18
+    },
+    "Potato leaf late blight": {
+      "precision": 0.5,
+      "recall": 0.5625,
+      "f1_score": 0.5294,
+      "support": 16
+    },
+    "Raspberry leaf": {
+      "precision": 0.9167,
+      "recall": 0.5789,
+      "f1_score": 0.7097,
+      "support": 19
+    },
+    "Squash Powdery mildew leaf": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1_score": 0.9,
+      "support": 20
+    },
+    "Tomato Septoria leaf spot": {
+      "precision": 0.4516,
+      "recall": 0.6087,
+      "f1_score": 0.5185,
+      "support": 23
+    },
+    "Tomato leaf bacterial spot": {
+      "precision": 0.5385,
+      "recall": 0.4118,
+      "f1_score": 0.4667,
+      "support": 17
+    },
+    "Tomato leaf late blight": {
+      "precision": 0.75,
+      "recall": 0.5,
+      "f1_score": 0.6,
+      "support": 18
+    }
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      25,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      4,
+      14,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      1,
+      0,
+      14,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      0,
+      0,
+      8,
+      2,
+      0,
+      1,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      4,
+      9,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      11,
+      1,
+      2,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      18,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      0,
+      0,
+      14,
+      5,
+      1
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      6,
+      7,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      4,
+      3,
+      0,
+      0,
+      1,
+      1,
+      9
+    ]
+  ],
+  "active_device": "cpu",
+  "device_name": "CPU (Intel Core Ultra 5 125H)",
+  "per_class_f1": {
+    "Blueberry leaf": 0.6977,
+    "Corn leaf blight": 0.8475,
+    "Corn rust leaf": 0.7778,
+    "Peach leaf": 0.8485,
+    "Potato leaf early blight": 0.4211,
+    "Potato leaf late blight": 0.5294,
+    "Raspberry leaf": 0.7097,
+    "Squash Powdery mildew leaf": 0.9,
+    "Tomato Septoria leaf spot": 0.5185,
+    "Tomato leaf bacterial spot": 0.4667,
+    "Tomato leaf late blight": 0.6
+  },
+  "per_class_precision": {
+    "Blueberry leaf": 0.6,
+    "Corn leaf blight": 0.8333,
+    "Corn rust leaf": 0.7778,
+    "Peach leaf": 0.9333,
+    "Potato leaf early blight": 0.4,
+    "Potato leaf late blight": 0.5,
+    "Raspberry leaf": 0.9167,
+    "Squash Powdery mildew leaf": 0.9,
+    "Tomato Septoria leaf spot": 0.4516,
+    "Tomato leaf bacterial spot": 0.5385,
+    "Tomato leaf late blight": 0.75
+  },
+  "per_class_recall": {
+    "Blueberry leaf": 0.8333,
+    "Corn leaf blight": 0.8621,
+    "Corn rust leaf": 0.7778,
+    "Peach leaf": 0.7778,
+    "Potato leaf early blight": 0.4444,
+    "Potato leaf late blight": 0.5625,
+    "Raspberry leaf": 0.5789,
+    "Squash Powdery mildew leaf": 0.9,
+    "Tomato Septoria leaf spot": 0.6087,
+    "Tomato leaf bacterial spot": 0.4118,
+    "Tomato leaf late blight": 0.5
+  },
+  "per_class_support": {
+    "Blueberry leaf": 18,
+    "Corn leaf blight": 29,
+    "Corn rust leaf": 18,
+    "Peach leaf": 18,
+    "Potato leaf early blight": 18,
+    "Potato leaf late blight": 16,
+    "Raspberry leaf": 19,
+    "Squash Powdery mildew leaf": 20,
+    "Tomato Septoria leaf spot": 23,
+    "Tomato leaf bacterial spot": 17,
+    "Tomato leaf late blight": 18
+  }
+}
