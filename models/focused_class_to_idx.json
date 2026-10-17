@@ -1,0 +1,13 @@
+{
+  "Blueberry leaf": 0,
+  "Corn leaf blight": 1,
+  "Corn rust leaf": 2,
+  "Peach leaf": 3,
+  "Potato leaf early blight": 4,
+  "Potato leaf late blight": 5,
+  "Raspberry leaf": 6,
+  "Squash Powdery mildew leaf": 7,
+  "Tomato Septoria leaf spot": 8,
+  "Tomato leaf bacterial spot": 9,
+  "Tomato leaf late blight": 10
+}
