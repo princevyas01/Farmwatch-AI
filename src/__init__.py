@@ -1,0 +1,1 @@
+"""FarmWatch AI root package."""
