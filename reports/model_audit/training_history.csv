@@ -1,0 +1,13 @@
+epoch,model,train_loss,train_acc,val_loss,val_acc,learning_rate,epoch_duration_sec,is_best_checkpoint
+1,EnhancedCropCNN,2.579,0.1157,2.401,0.18,0.001475,58.3,True
+2,EnhancedCropCNN,2.4335,0.1493,2.2462,0.17,0.0014,53.9,False
+3,EnhancedCropCNN,2.3779,0.1577,2.3128,0.16,0.001282,55.1,False
+4,EnhancedCropCNN,2.2849,0.1851,2.3223,0.21,0.001128,53.3,True
+5,EnhancedCropCNN,2.294,0.1777,2.1775,0.24,0.000948,53.2,True
+6,EnhancedCropCNN,2.2744,0.1998,2.1732,0.255,0.000755,52.5,True
+7,EnhancedCropCNN,2.2473,0.2187,2.1296,0.24,0.000562,54.3,False
+8,EnhancedCropCNN,2.1845,0.2156,2.1475,0.25,0.000383,77.5,False
+9,EnhancedCropCNN,2.1766,0.2261,2.1251,0.25,0.000228,68.0,False
+10,EnhancedCropCNN,2.1669,0.2618,2.1612,0.265,0.00011,95.6,True
+11,EnhancedCropCNN,2.1406,0.2555,2.1394,0.255,3.5e-05,87.9,False
+12,EnhancedCropCNN,2.1179,0.2503,2.1354,0.235,1e-05,77.0,False
