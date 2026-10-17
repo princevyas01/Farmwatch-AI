@@ -1,0 +1,14 @@
+sample_id,category,relative_image_path,true_class,predicted_class,confidence_score,is_correct,visualization_file
+80,correct_high_conf,data/raw/plantdoc/train/Peach leaf/peach-with-leaves-stock-picture-1662209.jpg,Peach leaf,Peach leaf,0.9205,True,correct_high_conf_s80_Peach_leaf_pred_Peach_leaf.png
+147,correct_high_conf,data/raw/plantdoc/train/Squash Powdery mildew leaf/Healthy+squash+leaves.jpg,Squash Powdery mildew leaf,Squash Powdery mildew leaf,0.8909,True,correct_high_conf_s147_Squash_Powde_pred_Squash_Powde.png
+75,correct_high_conf,data/raw/plantdoc/train/Peach leaf/stock-photo-peach-wet-fruit-with-leaf-isolated-on-white-248733745.jpg,Peach leaf,Peach leaf,0.8714,True,correct_high_conf_s75_Peach_leaf_pred_Peach_leaf.png
+157,correct_moderate_conf,data/raw/plantdoc/train/Tomato Septoria leaf spot/PHOTO_1333642732277.jpg,Tomato Septoria leaf spot,Tomato Septoria leaf spot,0.1239,True,correct_moderate_conf_s157_Tomato_Septo_pred_Tomato_Septo.png
+199,correct_moderate_conf,data/raw/plantdoc/train/Tomato leaf late blight/tomato-late-blight-leaf-61-3x32.jpg,Tomato leaf late blight,Tomato leaf late blight,0.1392,True,correct_moderate_conf_s199_Tomato_leaf__pred_Tomato_leaf_.png
+12,high_conf_error,data/raw/plantdoc/test/Blueberry leaf/northern-highbush-blueberry-blue-huckleberry-vaccinium-corymbosum-EHNXRR.jpg,Blueberry leaf,Peach leaf,0.9317,False,high_conf_error_s12_Blueberry_le_pred_Peach_leaf.png
+11,high_conf_error,data/raw/plantdoc/train/Blueberry leaf/blueberry-leaves-in-October.jpg,Blueberry leaf,Peach leaf,0.9289,False,high_conf_error_s11_Blueberry_le_pred_Peach_leaf.png
+14,high_conf_error,data/raw/plantdoc/train/Blueberry leaf/Blueberry165.JPG.jpg,Blueberry leaf,Peach leaf,0.8608,False,high_conf_error_s14_Blueberry_le_pred_Peach_leaf.png
+174,high_conf_error,data/raw/plantdoc/train/Tomato Septoria leaf spot/Septoria_Leaf_Spot_of_Tomato187.jpg,Tomato Septoria leaf spot,Squash Powdery mildew leaf,0.7645,False,high_conf_error_s174_Tomato_Septo_pred_Squash_Powde.png
+0,low_conf_error,data/raw/plantdoc/train/Blueberry leaf/Copy+of+Vaccinium---.JPG.jpg,Blueberry leaf,Raspberry leaf,0.2475,False,low_conf_error_s0_Blueberry_le_pred_Raspberry_le.png
+1,low_conf_error,data/raw/plantdoc/train/Blueberry leaf/blueberry-leaves-5931369.jpg,Blueberry leaf,Peach leaf,0.3695,False,low_conf_error_s1_Blueberry_le_pred_Peach_leaf.png
+2,low_conf_error,data/raw/plantdoc/train/Blueberry leaf/A+A+Blueberry+Leaf+Disease+002.jpg,Blueberry leaf,Peach leaf,0.3308,False,low_conf_error_s2_Blueberry_le_pred_Peach_leaf.png
+3,low_conf_error,data/raw/plantdoc/train/Blueberry leaf/blueberry-plant-berries-and-leaves-blueberries-vaccinium-corybosum-BNDMY8.jpg,Blueberry leaf,Potato leaf early blight,0.149,False,low_conf_error_s3_Blueberry_le_pred_Potato_leaf_.png
