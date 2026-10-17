@@ -1,0 +1,35 @@
+{
+  "model_architecture": "MobileNetV3-Small",
+  "is_pretrained": true,
+  "pretrained_weights": "ImageNet-1K (MobileNet_V3_Small_Weights.IMAGENET1K_V1)",
+  "input_resolution": [
+    224,
+    224
+  ],
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "channel_order": "RGB",
+  "interpolation": "BILINEAR",
+  "num_classes": 11,
+  "classes": [
+    "Blueberry leaf",
+    "Corn leaf blight",
+    "Corn rust leaf",
+    "Peach leaf",
+    "Potato leaf early blight",
+    "Potato leaf late blight",
+    "Raspberry leaf",
+    "Squash Powdery mildew leaf",
+    "Tomato Septoria leaf spot",
+    "Tomato leaf bacterial spot",
+    "Tomato leaf late blight"
+  ]
+}
