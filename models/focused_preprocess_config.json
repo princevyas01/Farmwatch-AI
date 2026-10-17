@@ -1,0 +1,33 @@
+{
+  "model_architecture": "EnhancedCropCNN",
+  "input_resolution": [
+    128,
+    128
+  ],
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "channel_order": "RGB",
+  "interpolation": "BILINEAR",
+  "num_classes": 11,
+  "classes": [
+    "Blueberry leaf",
+    "Corn leaf blight",
+    "Corn rust leaf",
+    "Peach leaf",
+    "Potato leaf early blight",
+    "Potato leaf late blight",
+    "Raspberry leaf",
+    "Squash Powdery mildew leaf",
+    "Tomato Septoria leaf spot",
+    "Tomato leaf bacterial spot",
+    "Tomato leaf late blight"
+  ]
+}
