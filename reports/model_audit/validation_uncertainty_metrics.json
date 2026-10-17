@@ -1,0 +1,52 @@
+{
+  "model": "MobileNetV3-Small Transfer Learning",
+  "checkpoint": "models\\mobilenetv3_small_transfer.pth",
+  "dataset_split": "focused_val_manifest.json (held-out validation partition)",
+  "sample_count": 200,
+  "calibration_status": "uncalibrated_raw_softmax",
+  "threshold_type": "heuristic",
+  "confidence_distribution": {
+    "mean": 0.705,
+    "std": 0.2332,
+    "min": 0.2103,
+    "p25": 0.519,
+    "median": 0.7153,
+    "p75": 0.9273,
+    "max": 0.9988
+  },
+  "overall_accuracy_pct": 69.0,
+  "heuristic_threshold_0_60": {
+    "threshold": 0.6,
+    "coverage_pct": 67.0,
+    "covered_count": 134,
+    "accuracy_covered_pct": 80.6,
+    "uncovered_count": 66,
+    "accuracy_uncovered_pct": 45.45
+  },
+  "confidence_bins": [
+    {
+      "range": "[0.0, 0.4)",
+      "count": 28,
+      "percentage": 14.0,
+      "accuracy": 32.14
+    },
+    {
+      "range": "[0.4, 0.6)",
+      "count": 38,
+      "percentage": 19.0,
+      "accuracy": 55.26
+    },
+    {
+      "range": "[0.6, 0.8)",
+      "count": 52,
+      "percentage": 26.0,
+      "accuracy": 61.54
+    },
+    {
+      "range": "[0.8, 1.0)",
+      "count": 82,
+      "percentage": 41.0,
+      "accuracy": 92.68
+    }
+  ]
+}
