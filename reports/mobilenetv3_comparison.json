@@ -1,0 +1,35 @@
+{
+  "dataset": "PlantDoc (11 Well-Represented Classes)",
+  "test_samples_count": 214,
+  "scratch_trained_baseline": {
+    "model_name": "EnhancedCropCNN",
+    "architecture": "Custom CNN (EnhancedCropCNN)",
+    "is_pretrained": false,
+    "test_accuracy": 0.271,
+    "balanced_accuracy": 0.271,
+    "macro_precision": 0.2403,
+    "macro_recall": 0.271,
+    "macro_f1": 0.2174,
+    "weighted_f1": 0.2202,
+    "average_latency_ms": 14.05
+  },
+  "transfer_learning_candidate": {
+    "model_name": "MobileNetV3-Small",
+    "architecture": "MobileNetV3-Small (ImageNet-1K pretrained)",
+    "is_pretrained": true,
+    "test_accuracy": 0.6729,
+    "balanced_accuracy": 0.6598,
+    "macro_precision": 0.691,
+    "macro_recall": 0.6598,
+    "macro_f1": 0.6652,
+    "weighted_f1": 0.6757,
+    "average_latency_ms": 11.09,
+    "p95_latency_ms": 16.29
+  },
+  "delta": {
+    "test_accuracy_diff": 0.4019,
+    "macro_f1_diff": 0.4478,
+    "balanced_accuracy_diff": 0.3888,
+    "latency_diff_ms": -2.96
+  }
+}
